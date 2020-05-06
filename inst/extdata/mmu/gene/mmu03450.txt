@@ -1,0 +1,14 @@
+gid	sym
+108138	Xrcc4
+14156	Fen1
+14375	Xrcc6
+17535	Mre11a
+19090	Prkdc
+19360	Rad50
+21673	Dntt
+22596	Xrcc5
+227525	Dclre1c
+319583	Lig4
+54125	Polm
+56626	Poll
+75570	Nhej1

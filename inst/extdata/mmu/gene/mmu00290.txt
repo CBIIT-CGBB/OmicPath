@@ -1,0 +1,5 @@
+gid	sym
+12035	Bcat1
+12036	Bcat2
+231691	Sds
+257635	Sdsl

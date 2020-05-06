@@ -1,0 +1,120 @@
+%\VignetteIndexEntry{GSEA vignette}
+%\VignetteKeywords{GSEA} 
+%\VignettePackage{GSEA}
+
+%
+% NOTE -- ONLY EDIT THE .Rtex FILE!!!  The .Rtex file is
+% likely to be overwritten.
+%
+
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc} 
+
+\usepackage{color}
+\usepackage{times}
+\usepackage{hyperref}
+\usepackage[width=.85\textwidth,font=small,labelfont=bf]{caption}
+\usepackage{subfig}
+\usepackage[T1]{fontenc} 
+\usepackage[american]{babel} 
+
+\usepackage{graphicx} 
+\usepackage{fancyvrb} 
+\usepackage{listings} 
+
+\textwidth=6.5in
+\textheight=8.5in
+\oddsidemargin=-.1in
+\evensidemargin=-.1in
+\headheight=-.3in
+
+\newcommand{\scscst}{\scriptscriptstyle}
+\newcommand{\scst}{\scriptstyle}
+
+\newcommand{\R}{{\textsf{R}}}
+\newcommand{\code}[1]{{\texttt{#1}}}
+\newcommand{\term}[1]{{\emph{#1}}}
+\newcommand{\Rpackage}[1]{\textsf{#1}}
+\newcommand{\Rfunction}[1]{\texttt{#1}}
+\newcommand{\Robject}[1]{\texttt{#1}}
+\newcommand{\Rclass}[1]{{\textit{#1}}}
+\newcommand{\Rmethod}[1]{{\textit{#1}}}
+\newcommand{\Rfunarg}[1]{{\textit{#1}}}
+
+\bibliographystyle{unsrt} % built-in. maintains citation order
+%\bibliographystyle{plainnat} % works
+%\bibliographystyle{nature}
+%\bibliographystyle{biblatex-nature}
+%\bibliographystyle{science}
+%\bibliographystyle{biblatex-science}
+%\bibliographystyle{pnas2009} % works
+%\bibliographystyle{naturemag}
+
+\begin{document}
+\SweaveOpts{eps=FALSE, pdf=FALSE, png=FALSE, jpeg=TRUE, keep.source=FALSE}
+\SweaveOpts{concordance=TRUE}
+
+\lstset{% setup listings 
+        language=R,% set programming language 
+        %backgroundcolor=\color{grey},% background color
+        basicstyle=\small,% basic font style 
+        keywordstyle=\bfseries,% keyword style 
+        commentstyle=\ttfamily\itshape,% comment style 
+        numbers=left,% display line numbers on the left side 
+        numberstyle=\scriptsize,% use small line numbers 
+        numbersep=8pt,% space between line numbers and code 
+        tabsize=2,% sizes of tabs 
+        frame=single,           % adds a frame around the code
+        showstringspaces=false,% do not replace spaces in strings by a certain character 
+        captionpos=b,% positioning of the caption below 
+        breaklines=true,% automatic line breaking 
+        escapeinside={(*}{*)},% escaping to LaTeX 
+        fancyvrb=true,% verbatim code is typset by listings 
+        extendedchars=false,% prohibit extended chars (chars of codes 128--255) 
+        literate={"}{{\texttt{"}}}1{<-}{{$\leftarrow$}}1{<<-}{{$\twoheadleftarrow$}}1 
+        {~}{{$\sim$}}1{<=}{{$\le$}}1{>=}{{$\ge$}}1{!=}{{$\neq$}}1{^}{{$^\wedge$}}1,% item to replace, text, length of chars 
+        alsoletter={.<-},% becomes a letter 
+        alsoother={$},% becomes other 
+        otherkeywords={!=, ~, $, *, \&, \%/\%, \%*\%, \%\%, <-, <<-, /},% other keywords 
+        deletekeywords={c}% remove keywords 
+} 
+
+\title{The GSEA usage by examples}
+\author{Ying Hu and Chunhua Yan}
+
+\date{\today}
+
+\maketitle
+
+\tableofcontents
+
+\clearpage
+
+\section{Introduction}
+The GSEA package is generated for CCBR.
+
+A quick way to load the vignette examples is:
+\begin{lstlisting} 
+vignette("GSEA")
+\end{lstlisting} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+\section{do GSEA}
+
+\subsection{db}
+The \texttt{db} 
+
+\subsection{gene}
+\begin{lstlisting} 
+options(stringsAsFactors = FALSE);
+library(GSEA); 
+library(multtest);
+
+data("TCGA.BC.cnv.2k.60", package = "OmicCircos");
+gene <- as.character(TCGA.BC.cnv.2k.60[,3]);
+out  <- doGSEA(db="GO", gene=gene);
+write.table(out, "GO_GSEA_out.xls", quote=F, sep="\t", row.names=F);
+\end{lstlisting} 
+
+\end{document}

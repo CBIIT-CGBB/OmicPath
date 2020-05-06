@@ -1,0 +1,16 @@
+gid	sym
+11416	Slc33a1
+12091	Glb1
+14421	B4galnt1
+15211	Hexa
+15212	Hexb
+20442	St3gal1
+20444	St3gal2
+20447	St6galnac3
+20448	St6galnac4
+20449	St8sia1
+20454	St3gal5
+225742	St8sia5
+26938	St6galnac5
+50935	St6galnac6
+54218	B3galt4

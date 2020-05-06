@@ -1,0 +1,14 @@
+shape	coords	gid	sym.path.compounds.map
+circle	179 257 4	NA	C16239
+circle	179 162 4	NA	C05752
+circle	421 162 4	NA	C16241
+circle	421 257 4	NA	C16238
+circle	279 257 4	NA	C16236
+circle	279 353 4	NA	C16237
+rect	157 196 203 213	79464	Lias
+rect	157 296 203 313	67164	Lipt2
+rect	257 296 303 313	79464	Lias
+rect	257 196 303 213	67164	Lipt2
+rect	399 296 445 313	623661	Lipt1
+rect	40 45 240 70	NA	mmu00785
+rect	42 145 128 179	NA	mmu00061

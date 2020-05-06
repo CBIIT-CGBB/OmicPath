@@ -1,0 +1,15 @@
+shape	coords	gid	sym.path.compounds.map
+circle	62 307 4	NA	C03564
+circle	170 307 4	NA	C01110
+circle	222 140 4	NA	C03341
+circle	222 210 4	NA	C03943
+circle	311 390 4	NA	C03771
+circle	311 210 4	NA	C00077
+circle	311 307 4	NA	C00515
+circle	401 210 4	NA	C01667
+circle	460 210 4	NA	C00062
+circle	460 307 4	NA	C00792
+rect	219 299 265 316	1610	DAO
+rect	368 328 414 345	1610	DAO
+rect	40 45 371 70	NA	hsa00472
+rect	294 134 481 159	NA	hsa00220

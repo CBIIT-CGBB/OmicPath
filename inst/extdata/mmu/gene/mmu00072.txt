@@ -1,0 +1,12 @@
+gid	sym
+110446	Acat1
+110460	Acat2
+15356	Hmgcl
+15360	Hmgcs2
+208715	Hmgcs1
+208982	Hmgcll1
+353371	Oxct2b
+64059	Oxct2a
+67041	Oxct1
+69772	Bdh2
+71911	Bdh1

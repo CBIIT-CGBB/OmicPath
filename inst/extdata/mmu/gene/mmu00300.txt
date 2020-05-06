@@ -1,0 +1,3 @@
+gid	sym
+110695	Aldh7a1
+23923	Aadat

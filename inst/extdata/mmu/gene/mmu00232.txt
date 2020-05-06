@@ -1,0 +1,7 @@
+gid	sym
+13077	Cyp1a2
+17960	Nat1
+17961	Nat2
+17962	Nat3
+22262	Uox
+22436	Xdh

@@ -1,0 +1,4 @@
+gid	sym
+623661	Lipt1
+67164	Lipt2
+79464	Lias

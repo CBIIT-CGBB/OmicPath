@@ -1,0 +1,10 @@
+gid	sym
+103711	Pnpo
+107272	Psat1
+11761	Aox1
+213043	Aox2
+216134	Pdxk
+57028	Pdxp
+71724	Aox3
+71872	Aox4
+73373	Phospho2

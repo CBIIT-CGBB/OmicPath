@@ -1,0 +1,10 @@
+Package: OmicPath
+Version: 0.1
+Date: 2016-02-01
+Author: Ying Hu <yhu@mail.nih.gov> Chunhua Yan <yanch@mail.nih.gov>
+Maintainer: Ying Hu <yhu@mail.nih.gov>
+License: GPL-2
+Title: OmicPath
+Description: There are tools of Omic Pathway/network analysis in the package.
+Depends: R (>= 2.10), igraph, EBImage, png, WGCNA
+Packaged: 2015-02-23 11:59:12 UTC; Ying Hu

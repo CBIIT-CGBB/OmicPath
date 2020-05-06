@@ -1,0 +1,11 @@
+gid	sym
+17434	Mocs2
+18041	Nfs1
+22117	Tst
+233189	Ctu1
+246221	Mpst
+56738	Mocs1
+66965	Ctu2
+68205	Urm1
+69372	Mocs3
+72026	Trmu

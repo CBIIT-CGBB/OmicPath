@@ -1,0 +1,2 @@
+gid	sym
+13142	Dao

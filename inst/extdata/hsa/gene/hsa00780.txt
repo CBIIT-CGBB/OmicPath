@@ -1,0 +1,4 @@
+gid	sym
+3141	HLCS
+54995	OXSM
+686	BTD

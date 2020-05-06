@@ -1,0 +1,16 @@
+gid	sym
+11605	Gla
+14343	Fut1
+14344	Fut2
+14348	Fut9
+15211	Hexa
+15212	Hexb
+17939	Naga
+20442	St3gal1
+20444	St3gal2
+20449	St8sia1
+227671	Gbgt1
+239559	A4galt
+26879	B3galnt1
+56546	Sec1
+93961	B3galt5

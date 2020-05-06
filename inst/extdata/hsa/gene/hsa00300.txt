@@ -1,0 +1,3 @@
+gid	sym
+501	ALDH7A1
+51166	AADAT

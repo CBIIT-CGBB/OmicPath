@@ -1,0 +1,5 @@
+gid	sym
+22173	Tyr
+233016	Blvrb
+319945	Flad1
+54391	Rfk

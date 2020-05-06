@@ -1,0 +1,12 @@
+gid	sym
+13063	Cycs
+13067	Cyct
+211389	Suox
+22117	Tst
+23827	Bpnt1
+23971	Papss1
+23972	Papss2
+242291	Impad1
+246221	Mpst
+59010	Sqrdl
+66071	Ethe1

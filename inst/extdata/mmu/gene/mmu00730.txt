@@ -1,0 +1,5 @@
+gid	sym
+105663	Thtpa
+18041	Nfs1
+29807	Tpk1
+66566	Ntpcr

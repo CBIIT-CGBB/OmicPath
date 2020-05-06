@@ -1,0 +1,2 @@
+gid	sym
+1610	DAO

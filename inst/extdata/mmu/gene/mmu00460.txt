@@ -1,0 +1,7 @@
+gid	sym
+108037	Shmt2
+14598	Ggt1
+20425	Shmt1
+207182	Ggt7
+23887	Ggt5
+71522	Ggt6

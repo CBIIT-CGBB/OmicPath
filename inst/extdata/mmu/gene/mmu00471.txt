@@ -1,0 +1,4 @@
+gid	sym
+14660	Gls
+14661	Glud1
+216456	Gls2
