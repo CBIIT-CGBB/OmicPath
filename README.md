@@ -7,7 +7,7 @@ install_github("CBIIT-CGR/OmicPath")
  
  
 # Examples
-### do GSEA
+### Do GSEA
 ```r
 set.seed(1234);
 ## get some genes from KEGG 
@@ -20,18 +20,18 @@ db  <- db_names()[1];
 out <- doGSEA(db=db, gene=genes, filter.num=2, fdr=T);
 ``` 
  
-### map gene information on pathway
-<img src="examples/02do_KEGGplot.png" width="400" height="280">
+### Map gene information on pathway
+<img src="examples/02do_KEGGplot.png" width="600" height="380">
   
 [code](examples/02do_KEGGplot.R)
 
-### get pathway gene relationships and plot pathway as network
+### Get pathway gene relationships and plot pathway as network
 <img src="examples/03data_network.png" width="200" height="400">  <img src="examples/03plot_network.png" width="400" height="400">
   
 [code](examples/03plot_network.R)
 
 
 ### Option: cluster algorithms in igraph
-<img src="examples/04do_igraph_cluster.png" width="400" height="400">
+<img src="examples/04do_igraph_cluster.png" width="450" height="450">
   
 [code](examples/04do_igraph_cluster.R)
