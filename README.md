@@ -6,7 +6,7 @@ install_github("CBIIT-CGR/OmicPath")
 ``` 
  
  
-# Examples
+# Examples:
 ### Do GSEA
 ```r
 set.seed(1234);
