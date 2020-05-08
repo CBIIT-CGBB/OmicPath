@@ -21,7 +21,7 @@ out <- doGSEA(db=db, gene=genes, filter.num=2, fdr=T);
 ``` 
  
 ### Map gene information on pathway
-<img src="examples/02do_KEGGplot.png" width="650" height="340">
+<img src="examples/02do_KEGGplot.png" width="650" height="360">
   
 [code](examples/02do_KEGGplot.R)
 
