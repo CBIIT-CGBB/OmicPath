@@ -24,6 +24,6 @@ out <- doGSEA(db=db, gene=genes, filter.num=2, fdr=T);
 
 
 ### Option: cluster algorithms in igraph
-![](examples/04do_igraph_cluster.png)
-
+<img src="examples/04do_igraph_cluster.png" width="800" height="800">
+  
 [code](examples/04do_igraph_cluster.R)
