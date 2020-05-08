@@ -14,6 +14,7 @@ dat.i    <- which(dat[,3]==pid);
 dat.s    <- dat[dat.i,];
 ## remove some relationahips
 dat.s    <- dat.s[-c(1:1000),];
+dat.s    <- dat.s[-c(dat.s[,1]==dat.s[,2]),]
 
 pdffile <- "03plot_network.pdf";
 g       <- igraph::graph.data.frame(dat.s, directed=T);
@@ -29,7 +30,7 @@ l     <- qgraph.layout.fruchtermanreingold(e, vcount=vcount(g4), weights=E(g)$we
                                            area=8*(vcount(g4)^2),repulse.rad=(vcount(g4)^3.1))
 
 vertex.size        <- runif(nrow(dat.s))*4;
-vertex.color       <- rep(col2[7], length(V(g)$label));
+vertex.color       <- rep(col2[7], length(V(g)));
 vertex.frame.color <- vertex.color;
 
 vertex.label.cex   <- log2(c(degree(g)+.1));
@@ -47,7 +48,6 @@ plot(g,
      edge.arrow.size    = 0.2,
      ##
      vertex.size        = vertex.size, 
-     vertex.shape       = "circle",
      vertex.color       = vertex.color,
      vertex.frame.color = vertex.frame.color,
      ##
