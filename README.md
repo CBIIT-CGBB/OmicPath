@@ -21,6 +21,14 @@ out <- doGSEA(db=db, gene=genes, filter.num=2, fdr=T);
 ``` 
  
 ### map gene information on pathway
+<img src="examples/02do_KEGGplot.png" width="800" height="800">
+  
+[code](examples/02do_KEGGplot.R)
+
+### get pathway gene relationships and plot pathway as network
+<img src="examples/03data_network.png" width="400" height="800">  <img src="examples/03plot_network.png" width="800" height="800">
+  
+[code](examples/03plot_network.R)
 
 
 ### Option: cluster algorithms in igraph
