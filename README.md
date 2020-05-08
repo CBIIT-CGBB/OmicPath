@@ -23,5 +23,7 @@ out <- doGSEA(db=db, gene=genes, filter.num=2, fdr=T);
 ### map gene information on pathway
 
 
-# Option: cluster algorithms in igraph
+### Option: cluster algorithms in igraph
+[](examples/04do_igraph_cluster.png)
 
+[code](examples/04do_igraph_cluster.R)
