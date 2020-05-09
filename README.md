@@ -33,7 +33,7 @@ KEGG: Ras signaling pathway
   
 [code](examples/03plot_network.R)
 
-### make network by gene neighborhoods in pathway
+### Make network by gene neighborhoods in pathway
 KEGG: Ras signaling pathway: make networks by the genes ("PAK2", "BAD", "RASGRF1", "RAP1A", "NRAS", "HRAS", "TIAM1", "RRAS2", "KRAS", "SHC3") and the gene's neighborhoods. The networks are the gene neighborhood order = 1 and 2 respectively.
 
 <img src="examples/04do_neighborhood_test1.png" width="400" height="400">  <img src="examples/04do_neighborhood_test2.png" width="400" height="400">
