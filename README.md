@@ -38,9 +38,9 @@ KEGG: Ras signaling pathway: make networks by the genes ("PAK2", "BAD", "RASGRF1
 
 <img src="examples/04do_neighborhood_test1.png" width="400" height="400">  <img src="examples/04do_neighborhood_test2.png" width="400" height="400">
   
-[code 1: order=1](examples/04do_neighborhood_test1.R);
+[code 1 (order=1)](examples/04do_neighborhood_test1.R)
   
-[code 2: order=2](examples/04do_neighborhood_test2.R);
+[code 2 (order=2)](examples/04do_neighborhood_test2.R)
 
 
 ### Option: cluster algorithms in igraph
