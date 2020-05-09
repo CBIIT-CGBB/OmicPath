@@ -10,7 +10,7 @@ install_github("CBIIT-CGR/OmicPath")
 ### Do GSEA
 ```r
 set.seed(1234);
-## get some genes from KEGG 
+## get some genes from biosystems database of NCBI
 dat   <- read.table(system.file("extdata/biosystems_hs.txt", package = "OmicPath"));
 genes <- sample(dat[,1], 200);
 
