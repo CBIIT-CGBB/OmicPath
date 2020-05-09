@@ -26,6 +26,7 @@ out <- doGSEA(db=db, gene=genes, filter.num=2, fdr=T);
 [code](examples/02do_KEGGplot.R)
 
 ### Get pathway gene relationships and plot pathway as network with clusters
+KEGG: Ras signaling pathway
 <img src="examples/03data_network.png" width="200" height="400">  <img src="examples/03plot_network.png" width="400" height="400">
   
 [code](examples/03plot_network.R)
