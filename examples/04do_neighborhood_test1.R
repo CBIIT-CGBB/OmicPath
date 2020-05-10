@@ -42,7 +42,10 @@ vertex.frame.color <- vertex.color;
 vertex.label.cex   <- log2(c(degree(g)+.1));
 vertex.label.cex[vertex.label.cex < 0.4] <- 0.4;
 vertex.label.cex[vertex.label.cex > 0.6] <- 0.6;
-vertex.label.color <- rgb(0,0,0,1);
+vertex.label.color <- rep(rgb(0,0,0,1), length(V(g)$name));
+
+v.i <- which(V(g)$name %in% gene.d);
+vertex.label.color[v.i] <- "red";
 
 pdf(pdffile, 6, 6);
 plot(g,
