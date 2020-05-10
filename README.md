@@ -31,19 +31,19 @@ KEGG: Ras signaling pathway
   
 <img src="examples/03data_network.png" width="200" height="400">  <img src="examples/03plot_network.png" width="400" height="400">
   
-[code](examples/03plot_network.R)
+[R codes](examples/03plot_network.R)
 
 ### Make network by gene neighborhoods in pathway
 KEGG: Ras signaling pathway: make networks by the genes ("PAK2", "BAD", "RASGRF1", "RAP1A", "NRAS", "HRAS", "TIAM1", "RRAS2", "KRAS", "SHC3") and the gene's neighborhoods. The networks are the gene neighborhood order = 1 and 2 respectively.
 
 <img src="examples/04do_neighborhood_test1.png" width="300" height="300">  <img src="examples/04do_neighborhood_test2.png" width="300" height="300">
   
-[code 1 (order=1)](examples/04do_neighborhood_test1.R)
+[R codes (order=1)](examples/04do_neighborhood_test1.R)
   
-[code 2 (order=2)](examples/04do_neighborhood_test2.R)
+[R codes (order=2)](examples/04do_neighborhood_test2.R)
 
 
 ### Option: cluster algorithms in igraph
 <img src="examples/04do_igraph_cluster.png" width="500" height="500">
   
-[code](examples/04do_igraph_cluster.R)
+[R codes](examples/04do_igraph_cluster.R)
