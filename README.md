@@ -2,7 +2,7 @@
 #### Install the package
 ```r
 library(devtools)
-install_github("CBIIT-CGR/OmicPath")
+install_github("CBIIT-CGBB/OmicPath")
 ``` 
  
  
