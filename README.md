@@ -43,7 +43,7 @@ KEGG: Ras signaling pathway: construct networks by the genes ("PAK2", "BAD", "RA
 [R codes (order=2)](examples/04do_neighborhood_test2.R)
 
 
-### Additional example: cluster algorithms in igraph
+### Additional examples: cluster algorithms in igraph
 <img src="examples/04do_igraph_cluster.png" width="500" height="500">
   
 [R codes](examples/04do_igraph_cluster.R)
