@@ -1,4 +1,4 @@
-# OmicPath: an R package for gene set enrichment analysis and pathway network analysis 
+# OmicPath: an R package for gene set analysis and pathway network analysis 
 #### Installation
 ```r
 library(devtools)
