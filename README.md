@@ -1,5 +1,5 @@
 # OmicPath: an R package for gene set enrichment analysis and pathway network analysis 
-#### Install the package
+#### Installation
 ```r
 library(devtools)
 install_github("CBIIT-CGBB/OmicPath")
@@ -7,7 +7,7 @@ install_github("CBIIT-CGBB/OmicPath")
  
  
 # Examples:
-### Do GSEA
+### Do gene set analysis (GSA)
 ```r
 set.seed(1234);
 ## get some genes from biosystems database of NCBI
@@ -16,11 +16,11 @@ genes <- sample(dat[,1], 200);
 
 ## select databases (GO) from the package
 db  <- db_names()[1];
-## do GSEA
+## do GSA
 out <- doGSEA(db=db, gene=genes, filter.num=2, fdr=T);
 ``` 
  
-### Map gene information on pathway
+### Map gene information on the pathway
 <img src="examples/02do_KEGGplot.png" width="650" height="360">
   
 [code](examples/02do_KEGGplot.R)
