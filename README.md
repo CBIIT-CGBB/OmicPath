@@ -7,7 +7,7 @@ install_github("CBIIT-CGBB/OmicPath")
  
  
 # Examples:
-### Do gene set analysis (GSA)
+### Perform gene set analysis (GSA)
 ```r
 set.seed(1234);
 ## get some genes from biosystems database of NCBI
@@ -25,7 +25,7 @@ out <- doGSEA(db=db, gene=genes, filter.num=2, fdr=T);
   
 [code](examples/02do_KEGGplot.R)
 
-### Get pathway gene relationships and plot pathway as network with clusters
+### Extract gene relationships in the pathway and plot the pathway as network clusters
   
 KEGG: Ras signaling pathway
   
