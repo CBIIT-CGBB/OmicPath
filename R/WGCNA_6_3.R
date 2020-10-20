@@ -28,7 +28,7 @@ hclustplotn=function(hier1, Color, RowLabels=NULL, cex.RowLabels = 0.9, ...)
   }
 }
 
-WGCNA_6_3 <- function(expr=expr, softPower=8, minM=minM, cutH=cutH, project.name="WGCNA_net"){
+WGCNA_6_3 <- function(expr=expr, softPower=8, minM=minM, cutH=cutH, stype="unsigned", project.name="WGCNA_net"){
   softPower <- softPower; # from 02_TOM
   
   # the pdf figure size should to be done by pdf("pdffile", sizeX, sizeY)
@@ -39,7 +39,7 @@ WGCNA_6_3 <- function(expr=expr, softPower=8, minM=minM, cutH=cutH, project.name
   # Co-expression similarity and adjacency
   # calculate the adjacencies, using the soft thresholding power 8:
   datExpr    <- expr;
-  adjacency  <- WGCNA::adjacency(datExpr, power = softPower);
+  adjacency  <- WGCNA::adjacency(datExpr, power = softPower, type=stype);
   
   # Topological Overlap Matrix (TOM)
   # Turn adjacency into topological overlap
