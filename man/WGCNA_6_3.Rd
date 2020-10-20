@@ -10,7 +10,7 @@
 }
 
 \usage{
-  WGCNA_6_3(expr=expr, softPower=8, minM=minM, cutH=cutH, project.name="WGCNA_net");
+  WGCNA_6_3(expr=expr, softPower=8, minM=minM, cutH=cutH, stype="unsigned", project.name="WGCNA_net");
 }
 
 \arguments{
@@ -18,6 +18,7 @@
    \item{softPower}{softPower: power value from step 2}
    \item{minM}{minM: minimum node number per module}
    \item{cutH}{cutH: threshold for module selecting}
+   \item{stype}{stype: unsigned, signed, signed hybrid, distance}
    \item{project.name}{project.name: project name}
 }
 
