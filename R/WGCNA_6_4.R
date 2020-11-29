@@ -25,6 +25,7 @@ WGCNA_6_4 <- function(expr=expr, pheno=pheno, mdir="module", cutHeight=200, soft
   saveB     <- paste(project.name , "-TOM-blockwise", sep="")
   mtp.file  <- paste(project.name, "_moduleTraitPvalue.xls", sep="")
   mtc.file  <- paste(project.name, "_moduleTraitCor.xls", sep="")
+  mes.file  <- paste(project.name, "_moduleEigengenes.xls", sep="")
   pm.file   <- paste(project.name, "_ProbeModule.xls", sep="")
   MEDiss.file <- paste(project.name, "_ModuleCor.xls", sep="")
   
@@ -126,6 +127,7 @@ WGCNA_6_4 <- function(expr=expr, pheno=pheno, mdir="module", cutHeight=200, soft
   moduleTraitPvalue <- WGCNA::corPvalueStudent(moduleTraitCor, nSamples);
   write.table(moduleTraitPvalue, mtp.file, sep="\t", quote=F)
   write.table(moduleTraitCor, mtc.file, sep="\t", quote=F)
+  write.table(MEs, mes.file, sep="\t", quote=F)
   
   #sizeGrWindow(16,10)
   ##############################################
