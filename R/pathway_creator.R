@@ -12,8 +12,14 @@ pathway_creator <- function(gene.table=gene.table, creator=creator,
   names(out.s) <- as.character(dat.s[,1]);
   out.b   <- dat.s;
   gene.u.num <- length(unique(unlist(out.s))); 
-  GSEA.db <- list(pathway.list=out.s, pathway.table=out.b, 
-                pathway.version=list("version:" = "2016.01.30", "Date:" = date(), 
+  if (is.null(mydate)){
+    GSEA.db <- list(pathway.list=out.s, pathway.table=out.b, 
+                pathway.version=list("version:" = version, "Date:" = date(), 
                                      "Gene number:" = gene.u.num, "Creator:" = "Ying Hu"));
+  } else {
+    GSEA.db <- list(pathway.list=out.s, pathway.table=out.b, 
+                pathway.version=list("version:" = version, "Date:" = mydate, 
+                                     "Gene number:" = gene.u.num, "Creator:" = "Ying Hu"));
+  }
   return(GSEA.db);
 }
