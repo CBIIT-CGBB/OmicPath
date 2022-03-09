@@ -1,7 +1,7 @@
 
 
 pathway_creator <- function(gene.table=gene.table, creator=creator, 
-                           version=version, mydate=NULL, dbname="GSEA.db"){
+                           version=version, mydate=NULL){
   dat.s  <- gene.table;
   out.s   <- list();
   for (i in 1:nrow(dat.s)){
@@ -13,13 +13,13 @@ pathway_creator <- function(gene.table=gene.table, creator=creator,
   out.b   <- dat.s;
   gene.u.num <- length(unique(unlist(out.s))); 
   if (is.null(mydate)){
-    dbname <- list(pathway.list=out.s, pathway.table=out.b, 
+    GSEA.db <- list(pathway.list=out.s, pathway.table=out.b, 
                 pathway.version=list("version:" = version, "Date:" = date(), 
                                      "Gene number:" = gene.u.num, "Creator:" = "Ying Hu"));
   } else {
-    dbname <- list(pathway.list=out.s, pathway.table=out.b, 
+    GSEA.db <- list(pathway.list=out.s, pathway.table=out.b, 
                 pathway.version=list("version:" = version, "Date:" = mydate, 
                                      "Gene number:" = gene.u.num, "Creator:" = "Ying Hu"));
   }
-  return(dbname);
+  return(GSEA.db);
 }
