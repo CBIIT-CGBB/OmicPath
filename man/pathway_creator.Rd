@@ -11,7 +11,7 @@
 
 \usage{
   pathway_creator(gene.table=gene.table, creator=creator, 
-                           version=version, mydate=NULL);
+                  version=version, mydate=NULL, dbname="GSEA.db");
 }
 
 \arguments{
@@ -19,6 +19,7 @@
    \item{creator}{string: name}
    \item{version}{string: db version}
    \item{mydate}{time: time}
+   \item{dbname}{pathway database name}
 }
 
 \author{
