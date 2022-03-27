@@ -106,8 +106,8 @@ doGSEA <- function(db=db, gene=gene, filter.num=0, fdr=FALSE){
   gene.db.sym   <- unique(unlist(g.list));
   gene.db.num   <- length(gene.db.sym);
   gene          <- gene[!is.na(gene)];
-  ## the gene list in GSEA.db 
-  all.gene      <- unique(unlist(GSEA.db$pathway.list));
+  ## the gene list in db 
+  all.gene      <- unique(unlist(g.list));
   gene.i        <- which(all.gene %in% gene);
   gene.num      <- length(gene.i);
   out.s <- c();
