@@ -10,7 +10,7 @@ doGSEA_all <- function(db=db, gene=gene, filter.num=0, fdr=FALSE){
     mydb <- c("GO_mm", "KEGG_mm", "PID_biocarta_mm", "PID_KEGG_mm", "PID_NCI_Nature_Curated_mm");
   }
   
-  out.s <- c();
+  out.s <- NULL;
   for (db in mydb){
     # by known genome
     pofile.s <- paste(db, ".RData", sep="");
@@ -110,7 +110,7 @@ doGSEA <- function(db=db, gene=gene, filter.num=0, fdr=FALSE){
   all.gene      <- unique(unlist(g.list));
   gene.i        <- which(all.gene %in% gene);
   gene.num      <- length(gene.i);
-  out.s <- c();
+  out.s <- NULL;
   for (i in 1:length(g.list)){
     g.sub  <- unlist(g.list[[i]]);
     g.i    <- which(g.sub %in% gene);
@@ -128,7 +128,7 @@ doGSEA <- function(db=db, gene=gene, filter.num=0, fdr=FALSE){
     out.s  <- rbind(out.s, c(seleced.group, seleced.k, db.group, db.mn, p.v, g.n, p.sym, p.name));
   }
   colname.s <- c("SigGeneNumInGroup",	"SigGeneNum",	"GeneNumInGroup",	"GeneNumInDB",	"Pvalue",	"Gene", "item.ID",	"item.name");
-  if (class(out.s)=="NULL"){
+  if (is.null(out.s)){
     print.s <- paste("No result: no gene in the item");
     return()
   } else {
